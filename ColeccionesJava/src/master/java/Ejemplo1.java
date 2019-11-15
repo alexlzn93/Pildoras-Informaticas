@@ -26,7 +26,7 @@ public class Ejemplo1 {
 				System.out.println(n + " Es un Double");
 			}
 			if (elemento instanceof Byte) {
-				Byte n = (Byte)elemento;  //cast(Byte)
+				Byte n = (Byte)elemento;  //cast(Byte).
 				System.out.println(n + " Es un Byte");
 			}
 		}
