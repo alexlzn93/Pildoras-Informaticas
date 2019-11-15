@@ -8,25 +8,25 @@ public class Ejemplo1 {
 
 	public static void procesarListas() {
 		ArrayList lista = new ArrayList();
-		lista.add(5);
-		lista.add("lucas");
-		lista.add(123.78);
-		lista.add((byte)7);
-		for (Object elemento : lista) {
+		lista.add(5); //integer
+		lista.add("lucas");  //String
+		lista.add(123.78);  //double
+		lista.add((byte)7);  //byte
+		for (Object elemento : lista) {  //Todos los tipos vienen de Object (clase madre)
 			if (elemento instanceof Integer) {
-				Integer n = (Integer)elemento;
+				Integer n = (Integer)elemento;  //cast(Integer)
 				System.out.println(n + " Es un Integer");
 			}
 			if (elemento instanceof String) {
-				String n = (String)elemento;
+				String n = (String)elemento;  //cast (String)
 				System.out.println(n + " Es un String");
 			}
 			if (elemento instanceof Double) {
-				Double n = (Double)elemento;
+				Double n = (Double)elemento;  //cast(Double)
 				System.out.println(n + " Es un Double");
 			}
 			if (elemento instanceof Byte) {
-				Byte n = (Byte)elemento;
+				Byte n = (Byte)elemento;  //cast(Byte)
 				System.out.println(n + " Es un Byte");
 			}
 		}
